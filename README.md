@@ -1,4 +1,4 @@
-# Lecture Open-Source Energy System Modeling 2025
+# Zahlenratespiel Lecture Open-Source Energy System Modeling 2025
 
 Copyright by Theresa Freibauer
 
