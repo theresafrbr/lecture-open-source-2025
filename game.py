@@ -16,7 +16,7 @@ def benutzereingabe():
             else:
                 print("Bitte gib eine Zahl innerhalb des gültigen Bereichs ein!")
         except ValueError:
-            print("Ungültige Eingabe! Bitte gib eine Zahl ein.")
+            print("Ungültige Eingabe! Bitte gib eine ganze Zahl ein.")
 
 # Funktion, die eine Runde des Spiels durchführt
 def spiele_runde(zahl):
@@ -41,4 +41,5 @@ def zahlenratespiel():
     zahl = generiere_zufallszahl()
     spiele_runde(zahl)
 
-zahlenratespiel()
+if __name__ == '__main__':
+    zahlenratespiel()
