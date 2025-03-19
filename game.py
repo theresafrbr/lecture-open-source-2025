@@ -1,9 +1,11 @@
 import random
 
+
 # Funktion zur Generierung einer zufälligen Zahl zwischen 1 und 100
 def generiere_zufallszahl():
     """Erstellt eine zufällige Zahl im Bereich von 1 bis 100."""
     return random.randint(1, 100)
+
 
 # Funktion zur Eingabe einer Zahl durch den Benutzer mit Fehlerbehandlung
 def benutzereingabe():
@@ -18,6 +20,7 @@ def benutzereingabe():
         except ValueError:
             print("Ungültige Eingabe! Bitte gib eine ganze Zahl ein.")
 
+
 # Funktion, die eine Runde des Spiels durchführt
 def spiele_runde(zahl):
     """Führt eine Runde des Zahlenratespiels durch, bis der Benutzer die richtige Zahl errät."""
@@ -25,14 +28,17 @@ def spiele_runde(zahl):
     while True:
         eingabe = benutzereingabe()
         versuche += 1
-        
+
         if eingabe < zahl:
             print("Zu niedrig! Versuche es erneut.")
         elif eingabe > zahl:
             print("Zu hoch! Versuche es erneut.")
         else:
-            print(f"Glückwunsch! Du hast die Zahl {zahl} in {versuche} Versuchen erraten.")
+            print(
+                f"Glückwunsch! Du hast die Zahl {zahl} in {versuche} Versuchen erraten."
+            )
             break
+
 
 # Hauptfunktion, die das Spiel startet
 def zahlenratespiel():
@@ -41,5 +47,6 @@ def zahlenratespiel():
     zahl = generiere_zufallszahl()
     spiele_runde(zahl)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     zahlenratespiel()
